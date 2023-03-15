@@ -1,0 +1,67 @@
+body {
+  background-color: #1e2124;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282b30;
+}
+
+.content {
+  background-color: #36393e;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+p {
+  color: white;
+}
+
+#btn {
+  margin: 3px;
+  border-radius: 5px;
+  background-color: #5695e2b9;
+  color: white;
+  border-style: none;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+#btn:hover {
+  box-shadow: 0 1px 2px 3px rgba(106, 173, 255, 0.67);
+  /* border-radius: 20px; */
+  transform: scale(1.05);
+}
+#numbers {
+  color: white;
+  margin: 15px;
+}
+
+#stars {
+  margin: 15px;
+  color: white;
+  -webkit-animation: glow 7s ease-in-out infinite alternate;
+  -moz-animation: glow 4s ease-in-out infinite alternate;
+  animation: glow 7s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #005ce6, 0 0 30px #005ce6,
+      0 0 40px #005ce6, 0 0 50px #005ce6, 0 0 60px #005ce6;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4d4d, 0 0 30px #ff4d4d,
+      0 0 40px #ff4d4d, 0 0 50px #ff4d4d, 0 0 60px #ff4d4d, 0 0 70px #ff4d4d;
+  }
+}
